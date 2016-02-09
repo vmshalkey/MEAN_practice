@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+	<!-- Angular External Script-->
+	<script src="./js/lib/angular.js"></script>
+	<!-- Angular - Route-->
+	<script src="./js/lib/angular-route.js"></script>
+	<!-- Bootstrap -->
+	<script src="./js/lib/jquery-1.11.2.js"></script>
+	<script src="./js/lib/bootstrap.js"></script>
+	<!-- Modules -->
+	<script type="text/javascript" src="./js/modules.js"></script>
+	<!-- Factories -->
+	<script type="text/javascript" src="./js/factories.factory.js"></script>
+	<!-- Controllers -->
+	<script type="text/javascript" src="./js/controllers.ctrl.js"></script>
+</head>
+<body ng-controller="MainController as main">
+	<h1>Main</h1>
+	<nav>
+		<a href="#/">Home</a>
+		<a href="#/users">Users</a>
+	</nav>
+	<div ng-view></div>
+</body>
+</html>
